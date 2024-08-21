@@ -1,0 +1,65 @@
+body {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    overflow: hidden; /* Evita el desplazamiento del contenido */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Mantiene la imagen fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7) url('./img/amadeus-ok.jpg') center center / cover no-repeat;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+header {
+    color: #fffefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    text-align: center;
+    position: fixed; /* Fija el contenido para que no se mueva */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden; /* Evita el desplazamiento */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #023e7e91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons a { 
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px 20px; 
+    background-color: #023e7e91; 
+    color: white; 
+    text-decoration:none; 
+    border-radius: 5px;
+}
+
+
